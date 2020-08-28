@@ -1,4 +1,4 @@
-export default projects = [
+export const projectsList = [
 	{
 		id: 3,
 		name: "SPM",

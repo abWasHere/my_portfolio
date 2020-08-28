@@ -1,0 +1,21 @@
+{
+  "name": "01_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abWasHere/my_portfolio-v1.git"
+  },
+  "author": "Audrey Belson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abWasHere/my_portfolio-v1/issues"
+  },
+  "homepage": "https://github.com/abWasHere/my_portfolio-v1#readme",
+  "type": "module"
+}
