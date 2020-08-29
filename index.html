@@ -41,7 +41,10 @@
 
 	<body>
 		<!------- navbar ------->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navMain">
+		<nav
+			class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 sticky-top"
+			id="navMain"
+		>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -72,10 +75,13 @@
 		<!----- end navbar ----->
 
 		<!------- showcase ------->
-		<div class="section" id="showcase">
-			<h1 class="title">Full Stack Developer</h1>
-			<h2 class="subtitle">This is supposed to be the brand sentence !</h2>
-			<a type="button" class="btn btn-outline-dark" href="#contact"
+		<div class="section jumbotron">
+			<h1 class="display-4">Full Stack Developer!</h1>
+			<p class="lead">This is supposed to be my brand sentence !</p>
+			<a
+				class="btn btn-outline-dark btn-lg rounded-pill"
+				href="#contact"
+				role="button"
 				>Hire me !</a
 			>
 		</div>
@@ -88,42 +94,61 @@
 		<!------- about ------->
 		<div class="section" id="about">
 			<div class="background">
-				My background is project management in real estate. I was required to
-				supervise and direct various operations within several housing projects.
-				I had to ensure that every project is completed safely, making sure it
-				runs on time and within the allocated budget allowance. I was in charge
-				of selecting all participants of the project and negociating their
-				contract. I also had experience in material supply and customer service.
+				My background is <strong>project management</strong> in real estate. I
+				was required to supervise and direct various operations within several
+				housing projects. I had to ensure that every project is completed
+				safely, making sure it runs on time and within the allocated budget
+				allowance. I was in charge of selecting all participants of the project
+				and negociating their contract. I also had experience in material supply
+				and customer service. <br />
+				After 6 years, I decided to switch careers. I am now a
+				<strong>web developer</strong> who aspires to thrive in the tech
+				industry.
 			</div>
 			<div class="skills">
 				<p class="head">My skills</p>
-				<img
-					src="https://www.codewars.com/users/abWasHere/badges/micro"
-					alt="codewars badge"
-				/>
-			</div>
-			<div class="dl-resume">
-				<a
-					class="btn btn-secondary"
-					href="https://docs.google.com/document/d/e/2PACX-1vQ4YNADW02RcHVyTw7l-FJDxU-BUoMri831VC2n2bdwezO63at2Lug7kYlat3u2nBBCgNgpCRcUEWO9/pub"
-					target="_blank"
-				>
-					<i class="fas fa-file-download"></i> Download my resume
-				</a>
+				<i class="fas fa-terminal"></i>
+				<ul class="list">
+					<li class="item">JavaScript ES6, HTML5, CSS3</li>
+					<li class="item">
+						React.js, Bootstrap, Material Ui (learning), Bulma, jQuery
+					</li>
+					<li class="item">Node.js, Express.js, noSQL, MongoDB, REST API</li>
+				</ul>
+				<i class="fas fa-pencil-alt"></i>
+				<ul class="list">
+					<li class="item">VS Code, Cloudinary storage</li>
+					<li class="item">Git, GitHub</li>
+					<li class="item">Miro, Trello, Figma (learning)</li>
+					<li class="item">Microsoft 365 softwares (and Google equivalents)</li>
+				</ul>
+				<p>
+					<img
+						src="https://www.codewars.com/users/abWasHere/badges/micro"
+						alt="codewars badge"
+					/>
+				</p>
 			</div>
 		</div>
 		<!----- end about ----->
 
 		<!------- contact ------->
+		<div class="dl-resume">
+			<a
+				class="btn btn-light"
+				href="https://docs.google.com/document/d/e/2PACX-1vQ4YNADW02RcHVyTw7l-FJDxU-BUoMri831VC2n2bdwezO63at2Lug7kYlat3u2nBBCgNgpCRcUEWO9/pub"
+				target="_blank"
+			>
+				<i class="fas fa-download"></i> Download my resume
+			</a>
+		</div>
 		<div class="section" id="contact">
-			<div class="phone">
-				<p class="contact"><i class="fas fa-mobile"></i>06 16 94 61 21</p>
-			</div>
 			<div class="container">
 				<a
-					class="btn btn-secondary"
+					class="btn btn-danger"
 					href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
-					>Send me an email</a
+				>
+					<i class="far fa-envelope"></i> Send me an email</a
 				>
 			</div>
 		</div>
@@ -132,6 +157,11 @@
 		<!------- footer ------->
 		<div class="footer" id="footer">
 			<div class="links">
+				<!-- COMPTE DRIBBBLE A CREER -->
+				<a href="#dribbble" target="_blank"
+					><i class="fab fa-dribbble-square"></i
+				></a>
+
 				<a href="https://github.com/abWasHere" target="_blank"
 					><i class="fab fa-github-square"></i
 				></a>

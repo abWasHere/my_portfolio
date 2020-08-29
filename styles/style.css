@@ -39,6 +39,19 @@
 	box-sizing: border-box;
 }
 
+/* backgrounds */
+.bg-main-dark {
+	background-color: var(--main-bg-dark);
+}
+.bg-main-light {
+	background-color: var(--main-bg-light);
+}
+.bg-main-grey {
+	background-color: var(--main-bg-grey);
+}
+
+/* displays */
+
 /* navbar ---------- */
 .navbar-light .navbar-toggler {
 	color: rgba(0, 0, 0, 0.5);
@@ -56,7 +69,7 @@
 }
 
 .fa-heart {
-	color: var(--color-react);
+	color: var(--danger);
 }
 
 .fa-file-download {
@@ -64,12 +77,6 @@
 }
 
 .links {
-	height: 20px;
-}
-
-.links a,
-.links img {
-	height: 100%;
 }
 
 /* titles */
@@ -83,7 +90,6 @@ p.head {
 }
 
 /* links */
-
 a {
 	color: inherit;
 }
