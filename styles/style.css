@@ -2,8 +2,9 @@
 :root {
 	--main-bg-grey: #2c2c2c;
 	--main-bg-light: #f3e5f5;
-    --main-bg-dark: #4a148c;
-    --color-react: #61DAFB;
+	--main-bg-dark: #4a148c;
+	--color-react: #61dafb;
+	--color-grey: #2c2c2c;
 }
 /*   
     --blue: #007bff;
@@ -49,14 +50,40 @@
 }
 
 /* font awesome icons */
-.fas {
-    color : var(--gray-dark)
+.fas,
+.fab {
+	color: var(--gray);
 }
 
 .fa-heart {
-    color: var(--color-react);
+	color: var(--color-react);
 }
 
 .fa-file-download {
-    color: #fff;
+	color: #fff;
+}
+
+.links {
+	height: 20px;
+}
+
+.links a,
+.links img {
+	height: 100%;
+}
+
+/* titles */
+h1.title {
+}
+
+h2.subtitle {
+}
+
+p.head {
+}
+
+/* links */
+
+a {
+	color: inherit;
 }
