@@ -1,19 +1,12 @@
 import { projectsList } from "./js/projectsList.js";
 
-const cross = `<span class="cross" aria-hidden="true">&times;</span>`;
-const burger = `<span class="navbar-toggler-icon burger"></span>`;
-let openedMenu = false;
-
-/* ------ menu button -------------- */
-$("#btn-menu").click(() => {
-	openedMenu = !openedMenu;
-	if (openedMenu) $("#btn-menu .burger").replaceWith(cross);
-	else $("#btn-menu .cross").replaceWith(burger);
+/* ------ discord username popup -------------- */
+$("#discord-popup").on("click", () => {
+	console.log("discord clicked !");
+	$("#discord-id").toggleClass('invisible');
 });
 
-// FIXME: LE MENU NE COLLAPSE PLUS
-
-/* ------ back to top button ------- */
+/* ------ FIXME: back to top button ------- */
 $(document).ready(function () {
 	// button fade in and fade out
 	$(window).scroll(function () {

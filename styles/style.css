@@ -1,4 +1,4 @@
-/* variables -- colors */
+/* VARIABLES -- colors */
 :root {
 	--main-bg-grey: #2c2c2c;
 	--main-bg-light: #f3e5f5;
@@ -6,7 +6,7 @@
 	--color-react: #61dafb;
 	--color-grey: #2c2c2c;
 }
-/*   
+/*   bootstrap colors :
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -30,16 +30,14 @@
     --dark: #343a40; 
 */
 
-/* variables -- sizes */
-
-/* general ---------- */
+/* GENERAL ---------- */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* backgrounds */
+/* BACKGROUNDS */
 .bg-main-dark {
 	background-color: var(--main-bg-dark);
 }
@@ -49,38 +47,45 @@
 .bg-main-grey {
 	background-color: var(--main-bg-grey);
 }
-
-/* displays */
-
-/* navbar ---------- */
-.navbar-light .navbar-toggler {
-	color: rgba(0, 0, 0, 0.5);
-	border: none;
+.bg-discord {
+	background-color: #7289da;
+	width: fit-content;
+	border-radius: 4px;
 }
-#navMain button:focus {
-	outline: none;
-	color: rgba(0, 0, 0, 0.5);
+.bg-fade {
+	background: linear-gradient(0deg, #2c2c2c 0%, rgba(44, 44, 44, 0) 100%);
+}
+
+/* DISPLAYS */
+.disp-flex {
+	display: flex;
+	align-items: center;
+}
+.disp-col {
+	flex-direction: column;
+}
+.disp-centered {
+	justify-content: center;
+}
+.text-centered {
+	text-align: center;
 }
 
 /* font awesome icons */
-.fas,
-.fab {
-	color: var(--gray);
+.fa-times {
+	color: #fff;
 }
-
 .fa-heart {
 	color: var(--danger);
 }
 
-.fa-file-download {
+.fa-file-download,
+.fa-discord {
 	color: #fff;
 }
 
-.links {
-}
-
 /* titles */
-h1.title {
+/* h1.title {
 }
 
 h2.subtitle {
@@ -88,16 +93,59 @@ h2.subtitle {
 
 p.head {
 }
-
+ */
 /* links */
 a {
 	color: inherit;
 }
 
+.link-btn {
+	width: 300px;
+}
+
+/* NAVBAR ---------- */
+#navMain .navbar-toggler {
+	color: rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+#navMain button:focus {
+	outline: none;
+	color: rgba(0, 0, 0, 0.5);
+}
+.navbar-toggler > .close {
+	display: inline;
+	color: #fff;
+}
+.navbar-toggler.collapsed > .close,
+.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+	display: none;
+}
+
+/* CONTACT ---------- */
+.contacts #discord-popup {
+	color: #fff;
+}
+.contacts.bg-discord {
+	position: relative;
+}
+#discord-id { /* TODO: AJOUTER UNE ANIMATION DE DEPLI */
+    position: absolute;
+    right: -120px;
+    top: 7px;
+}
+/* FOOTER ---------- */
+#footer {
+	height: 300px;
+	text-align: center;
+	margin-top: 3%;
+	color: whitesmoke;
+}
+
 /* back-to-top button */
 .back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: none;
 }
