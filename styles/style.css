@@ -1,12 +1,36 @@
-/* VARIABLES -- colors */
+/* ---------- FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* titles */
+#my-name,
+#btn-hire,
+div.creator {
+	font-family: "Lobster", cursive;
+}
+
+h1.title {
+}
+
+h2.subtitle {
+}
+
+h3.section-head {
+}
+
+p.head {
+}
+
+/* ---------- VARIABLES -- colors */
 :root {
-	--main-bg-grey: #2c2c2c;
-	--main-bg-light: #f3e5f5;
-	--main-bg-dark: #4a148c;
+	--bg-purple: #3333cc;
+	--bg-green: ;
 	--color-react: #61dafb;
+	--color-discord: #7289da;
 	--color-grey: #2c2c2c;
 }
-/*   bootstrap colors :
+
+/* bootstrap colors :
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -30,33 +54,25 @@
     --dark: #343a40; 
 */
 
-/* GENERAL ---------- */
+/* ---------- GENERAL */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* BACKGROUNDS */
-.bg-main-dark {
-	background-color: var(--main-bg-dark);
-}
-.bg-main-light {
-	background-color: var(--main-bg-light);
-}
-.bg-main-grey {
-	background-color: var(--main-bg-grey);
+/* ---------- BACKGROUNDS */
+.bg-purple {
+	background-color: var(--bg-purple);
+	color: whitesmoke;
 }
 .bg-discord {
-	background-color: #7289da;
+	background-color: var(--color-discord);
 	width: fit-content;
 	border-radius: 4px;
 }
-.bg-fade {
-	background: linear-gradient(0deg, #2c2c2c 0%, rgba(44, 44, 44, 0) 100%);
-}
-
-/* DISPLAYS */
+/* ---------- DISPLAYS */
+/* flex --- */
 .disp-flex {
 	display: flex;
 	align-items: center;
@@ -70,8 +86,26 @@
 .text-centered {
 	text-align: center;
 }
+/* grid --- */
+.disp-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-gap: 10px;
+}
+.disp-grid .col {
+	padding: 0;
+}
+.disp-grid .col .card {
+	width: 290px;
+}
+.disp-grid .col .card.id3 {
+	width: 400px;
+}
+.disp-grid .col .card.id2 {
+	width: 350px;
+}
 
-/* font awesome icons */
+/* ---------- ICONS */
 .fa-times {
 	color: #fff;
 }
@@ -84,16 +118,6 @@
 	color: #fff;
 }
 
-/* titles */
-/* h1.title {
-}
-
-h2.subtitle {
-}
-
-p.head {
-}
- */
 /* links */
 a {
 	color: inherit;
@@ -101,9 +125,21 @@ a {
 
 .link-btn {
 	width: 300px;
+	position: relative;
 }
 
-/* NAVBAR ---------- */
+.link-btn i {
+	position: absolute;
+	left: 20px;
+	top: 11px;
+}
+
+/* lists */
+.list .item {
+	list-style-type: none;
+}
+
+/* ---------- NAVBAR */
 #navMain .navbar-toggler {
 	color: rgba(0, 0, 0, 0.5);
 	border: none;
@@ -122,19 +158,31 @@ a {
 	display: none;
 }
 
-/* CONTACT ---------- */
-.contacts #discord-popup {
+/* ---------- CONTACT */
+.contacts #discord-link {
 	color: #fff;
 }
 .contacts.bg-discord {
 	position: relative;
 }
-#discord-id { /* TODO: AJOUTER UNE ANIMATION DE DEPLI */
-    position: absolute;
-    right: -120px;
-    top: 7px;
+.contacts.bg-discord:hover {
+	background-color: #6a7eca;
 }
-/* FOOTER ---------- */
+#discord-id {
+	/* TODO: AJOUTER UNE ANIMATION DE DEPLI */
+	position: absolute;
+	border: 1px solid var(--color-discord);
+	color: var(--color-discord);
+}
+#discord-id:hover {
+	color: #fff;
+	background-color: var(--color-discord);
+}
+
+#collapseMsg {
+}
+
+/* ---------- FOOTER */
 #footer {
 	height: 300px;
 	text-align: center;
@@ -142,10 +190,28 @@ a {
 	color: whitesmoke;
 }
 
-/* back-to-top button */
+/* ---------- BACK-TO-TOP BUTTON */
 .back-to-top {
 	position: fixed;
 	bottom: 25px;
 	right: 25px;
 	display: none;
+}
+
+/* ---------- ANIMATIONS */
+
+.slide-right {
+	-webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right {
+	0% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	100% {
+		-webkit-transform: translateX(20px);
+		transform: translateX(20px);
+	}
 }

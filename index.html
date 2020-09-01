@@ -6,6 +6,28 @@
 		<!-- styles -->
 		<link rel="stylesheet" href="./styles/style.css" />
 		<link rel="stylesheet" href="./styles/hover.css" />
+		<!-- favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./images/portfolio_favicon_io"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/portfolio_favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./images/portfolio_favicon_io/favicon-16x16.png"
+		/>
+		<link
+			rel="manifest"
+			href="./images/portfolio_favicon_io/site.webmanifest"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -55,9 +77,8 @@
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-			    <span class="my-1 mx-2 close"><i class="fas fa-times"></i></span>
+				<span class="my-1 mx-2 close"><i class="fas fa-times"></i></span>
 				<span id="burger" class="navbar-toggler-icon"></span>
-		
 			</button>
 
 			<a class="navbar-brand" id="my-name" href="#showcase">Audrey Belson</a>
@@ -78,123 +99,134 @@
 		</nav>
 		<!----- end navbar ----->
 
-		<!------- showcase ------->
+		<!------- showcase / jumbotron ------->
 		<div class="section jumbotron">
 			<h1 class="display-4">Full Stack Developer</h1>
 			<p class="lead">This is supposed to be my brand sentence!</p>
 			<a
 				class="btn btn-outline-dark btn-lg rounded-pill"
+				id="btn-hire"
 				href="#contact"
 				role="button"
 				>Hire me !</a
 			>
 		</div>
-		<!----- end showcase ----->
+		<!----- end showcase / jumbotron ----->
 
-		<!------- projects ------->
-		<div class="section" id="projects">
-			<h3 class="section-head">My projects</h3>
-			<!--  photo, head (titre), desc, lien vers demo, lien vers code source -->
-			<!-- indiquer si personnels ou en collaboration -->
-			<div class="card" style="width: 18rem;">
-				<img src="./images/ironhack-logo.svg" class="card-img-top" alt="spm screenshot">
-				<div class="card-body">
-					<h5 class="card-title">SPM</h5>
-					<h6 class="card-subtitle mb-2 text-muted">Sport pour meufs, a web app designed for ...</h6>
-					<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur fugit officiis, quaerat architecto illum porro harum soluta eveniet asperiores. Fugiat dolor cupiditate corrupti autem aliquam aperiam exercitationem numquam veritatis laudantium.</p>
-					<a href="#" class="card-link">Demo</a>
-					<a href="#" class="card-link"><i class="fas fa-code"></i> Source</a>
+		<div class="container-lg">
+
+			<!------- projects ------->
+			<div class="section" id="projects">
+				<h3 class="section-head">My projects</h3>
+				 <!-- <div class="row row-cols-3" id="cards-container"></div> -->
+				 <div class="disp-grid" id="cards-container"></div>
+			</div>
+			<!----- end projects ----->
+
+			<!------- about ------->
+			<div class="section" id="about">
+				<h3 class="section-head">About me</h3>
+				<div class="background">
+					My background is <strong>project management</strong> in real estate. I
+					was required to supervise and direct various operations within several
+					housing projects. I had to ensure that every project is completed
+					safely, making sure it runs on time and within the allocated budget
+					allowance. I was in charge of selecting all participants of the
+					project and negociating their contract. I also had experience in
+					material supply and customer service. <br />
+					After 6 years, I decided to switch careers. I am now a
+					<strong>web developer</strong> who aspires to thrive in the tech
+					industry.
+				</div>
+				<div class="skills">
+					<p class="head">My skills</p>
+					<i class="fas fa-terminal"></i>
+					<ul class="list">
+						<li class="item">JavaScript ES6, HTML5, CSS3</li>
+						<li class="item">
+							React.js, Bootstrap, Material Ui (learning), Bulma, jQuery
+						</li>
+						<li class="item">Node.js, Express.js, noSQL, MongoDB, REST API</li>
+					</ul>
+					<i class="fas fa-pencil-alt"></i>
+					<ul class="list">
+						<li class="item">VS Code, Cloudinary storage</li>
+						<li class="item">Git, GitHub</li>
+						<li class="item">Miro, Trello, Figma (learning)</li>
+						<li class="item">
+							Microsoft 365 softwares (and Google equivalents)
+						</li>
+					</ul>
+					<p>
+						<img
+							src="https://www.codewars.com/users/abWasHere/badges/micro"
+							alt="codewars badge"
+						/>
+					</p>
 				</div>
 			</div>
-		</div>
-		<!----- end projects ----->
+			<!----- end about ----->
 
-		<!------- about ------->
-		<div class="section" id="about">
-			<h3 class="section-head">About me</h3>
-			<div class="background">
-				My background is <strong>project management</strong> in real estate. I
-				was required to supervise and direct various operations within several
-				housing projects. I had to ensure that every project is completed
-				safely, making sure it runs on time and within the allocated budget
-				allowance. I was in charge of selecting all participants of the project
-				and negociating their contract. I also had experience in material supply
-				and customer service. <br />
-				After 6 years, I decided to switch careers. I am now a
-				<strong>web developer</strong> who aspires to thrive in the tech
-				industry.
+			<!------- contact ------->
+			<div class="section" id="contact">
+				<div class="contacts">
+					<a
+						class="btn btn-light link-btn"
+						href="https://drive.google.com/file/d/1Eb3-YrmlpGklOaRHGTDOF4KykiIhvg9Z/view?usp=sharing"
+						target="_blank"
+					>
+						<i class="fas fa-download"></i> Download my resume
+					</a>
+				</div>
+				<div class="contacts">
+					<a
+						class="btn btn-danger link-btn"
+						href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
+					>
+						<i class="far fa-envelope"></i> Send me an email</a
+					>
+				</div>
+				<div class="contacts bg-discord">
+					<a class="btn link-btn" id="discord-link">
+						<i class="fab fa-discord"></i> Find me on Discord</a
+					>
+					<button
+						id="discord-id"
+						type="button"
+						class="btn invisible"
+						data-toggle="collapse"
+						href="#collapseMsg"
+						aria-expanded="false"
+						aria-controls="collapseMsg"
+					>
+						Audwey#0769
+						<div
+					class="collapse"
+					id="collapseMsg"
+					role="alert"
+				>
+					Copied!
+				</div>
+					</button>
+					
+				</div>
+				
 			</div>
-			<div class="skills">
-				<p class="head">My skills</p>
-				<i class="fas fa-terminal"></i>
-				<ul class="list">
-					<li class="item">JavaScript ES6, HTML5, CSS3</li>
-					<li class="item">
-						React.js, Bootstrap, Material Ui (learning), Bulma, jQuery
-					</li>
-					<li class="item">Node.js, Express.js, noSQL, MongoDB, REST API</li>
-				</ul>
-				<i class="fas fa-pencil-alt"></i>
-				<ul class="list">
-					<li class="item">VS Code, Cloudinary storage</li>
-					<li class="item">Git, GitHub</li>
-					<li class="item">Miro, Trello, Figma (learning)</li>
-					<li class="item">Microsoft 365 softwares (and Google equivalents)</li>
-				</ul>
-				<p>
-					<img
-						src="https://www.codewars.com/users/abWasHere/badges/micro"
-						alt="codewars badge"
-					/>
-				</p>
-			</div>
-		</div>
-		<!----- end about ----->
+			<!----- end contact ----->
 
-		<!------- contact ------->
-		<div class="section" id="contact">
-			<div class="contacts">
-				<a
-					class="btn btn-light link-btn"
-					href="https://drive.google.com/file/d/1Eb3-YrmlpGklOaRHGTDOF4KykiIhvg9Z/view?usp=sharing"
-					target="_blank"
-				>
-					<i class="fas fa-download"></i> Download my resume
-				</a>
-			</div>
-			<div class="contacts">
-				<a
-					class="btn btn-danger link-btn"
-					href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
-				>
-					<i class="far fa-envelope"></i> Send me an email</a
-				>
-			</div>
-			<div class="contacts bg-discord">
-				<button
-					class="btn link-btn"
-					id="discord-popup"
-				>
-					<i class="fab fa-discord"></i></i> Find me on Discord</button
-				>
-				<div id="discord-id" class="invisible">Audwey#0769</div> 
-			</div>
-			
+			<!---- back to top button ---->
+			<a
+				id="back-to-top"
+				href="#"
+				class="btn btn-light rounded-circle back-to-top"
+				role="button"
+				><i class="fas fa-chevron-up"></i
+			></a>
+			<!-- end back to top button -->
 		</div>
-		<!----- end contact ----->
-
-		<!---- back to top button ---->
-		<a
-			id="back-to-top"
-			href="#"
-			class="btn btn-light rounded-circle back-to-top"
-			role="button"
-			><i class="fas fa-chevron-up"></i
-		></a>
-		<!-- end back to top button -->
 
 		<!------- footer ------->
-		<div class="footer disp-flex disp-centered disp-col bg-fade" id="footer">
+		<div class="footer disp-flex disp-centered disp-col bg-dark" id="footer">
 			<div class="links">
 				<!-- COMPTE DRIBBBLE A CREER -->
 				<a href="https://dribbble.com/abWasHere" target="_blank"
