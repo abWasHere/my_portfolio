@@ -239,10 +239,10 @@ h2.section-head {
 	width: fit-content;
 	margin: var(--padding-around) 0;
 	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.13) !important;
+	/* height: 60px;
+	line-height: 60px; */
 }
-.contacts a {
-	height: 50px;
-}
+
 #contact .contacts #discord-link {
 	color: #fff;
 }
