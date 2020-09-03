@@ -1,58 +1,17 @@
+@import "./animations.css";
+@import "./burger.css";
+
 /* ---------- FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-/* titles */
-#my-name,
-#btn-hire,
-div.creator {
-	font-family: "Lobster", cursive;
-}
-
-h1.title {
-}
-
-h2.subtitle {
-}
-
-h3.section-head {
-}
-
-p.head {
-}
-
-/* ---------- VARIABLES -- colors */
+/* ---------- VARIABLES */
 :root {
-	--bg-purple: #3333cc;
-	--bg-green: ;
+	--bg-main-colored: #3333cc;
 	--color-react: #61dafb;
 	--color-discord: #7289da;
-	--color-grey: #2c2c2c;
+	--color-grey: #414141;
+	--padding-around: 20px;
 }
-
-/* bootstrap colors :
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40; 
-*/
 
 /* ---------- GENERAL */
 * {
@@ -60,10 +19,13 @@ p.head {
 	padding: 0;
 	box-sizing: border-box;
 }
+.padding-main {
+	padding: 100px var(--padding-around) 20px;
+}
 
 /* ---------- BACKGROUNDS */
-.bg-purple {
-	background-color: var(--bg-purple);
+.bg-main {
+	background-color: var(--bg-main-colored);
 	color: whitesmoke;
 }
 .bg-discord {
@@ -71,6 +33,7 @@ p.head {
 	width: fit-content;
 	border-radius: 4px;
 }
+
 /* ---------- DISPLAYS */
 /* flex --- */
 .disp-flex {
@@ -89,33 +52,35 @@ p.head {
 /* grid --- */
 .disp-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 50px;
 }
 .disp-grid .col {
 	padding: 0;
 }
-.disp-grid .col .card {
-	width: 290px;
-}
-.disp-grid .col .card.id3 {
-	width: 400px;
-}
-.disp-grid .col .card.id2 {
-	width: 350px;
+
+/* section --- */
+@media all and (min-width: 800px) {
+	.section {
+		padding: 70px 0;
+	}
 }
 
 /* ---------- ICONS */
-.fa-times {
-	color: #fff;
-}
 .fa-heart {
 	color: var(--danger);
 }
-
 .fa-file-download,
-.fa-discord {
+.fa-discord,
+.linky {
 	color: #fff;
+}
+.linky {
+	margin: 15px;
+}
+
+.linky:hover {
+	color: var(--danger);
 }
 
 /* links */
@@ -134,12 +99,29 @@ a {
 	top: 11px;
 }
 
-/* lists */
-.list .item {
-	list-style-type: none;
+/* titles */
+#my-name,
+#btn-hire,
+div.creator {
+	font-family: "Lobster", cursive;
+}
+
+h2.section-head {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", "Noto Sans", sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	color: var(--color-grey);
+}
+
+#about h3 {
+	font-weight: 400;
 }
 
 /* ---------- NAVBAR */
+#navMain {
+	margin-bottom: 0rem;
+}
 #navMain .navbar-toggler {
 	color: rgba(0, 0, 0, 0.5);
 	border: none;
@@ -149,37 +131,135 @@ a {
 	outline: none;
 	color: rgba(0, 0, 0, 0.5);
 }
-.navbar-toggler > .close {
-	display: inline;
+
+/* ---------- SHOWCASE */
+#showcase .jumbo-text {
+	flex-grow: 2;
+	width: 50%;
+	padding: 0px var(--padding-around);
+}
+
+#showcase .jumbo-img {
+	flex-grow: 1;
+}
+
+/* my picture */
+#showcase .jumbo-img .img-wrapper {
+	border-radius: 100%;
+	width: 300px;
+	height: 300px;
+	background: url("./../images/Audrey\ B.jpg") no-repeat center / cover;
+}
+
+@media all and (max-width: 800px) {
+	#showcase {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	#showcase .jumbo-text {
+		padding: 20px;
+		width: 100%;
+	}
+	#showcase .jumbo-img {
+		margin-bottom: 20px;
+	}
+	#showcase .jumbo-img .img-wrapper {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+/* ---------- PROJECTS */
+#projects {
+	padding: 0;
+}
+#projects #cards-container {
+	padding: 50px 0px;
+	margin: auto;
+}
+#projects .card {
+	height: 100%;
+}
+#projects .card .card-titles {
+	min-height: 25%;
+}
+#projects .card .card-link {
+	color: var(--bg-main-colored);
+}
+
+/* ---------- ABOUT */
+#about {
+	padding-right: 0;
+	padding-left: 0;
+}
+#about h3 {
+	text-align: center;
+}
+#about .section-head,
+#about .experience {
 	color: #fff;
 }
-.navbar-toggler.collapsed > .close,
-.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
-	display: none;
+#about .bg-main {
+	border-radius: 20px;
+}
+#about .section-head,
+#about .experience {
+	padding-right: 27%;
+}
+#about .skills {
+	margin-top: 50px;
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", "Noto Sans", sans-serif;
+}
+#about .skills .disp-flex {
+	padding: var(--padding-around);
+	align-items: flex-start;
+	justify-content: space-around;
+	border-bottom: 1px grey solid;
+}
+@media all and (max-width: 800px) {
+	#about .skills .disp-flex,
+	#about h3 {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+/* about lists */
+.list .item {
+	list-style-type: none;
 }
 
 /* ---------- CONTACT */
-.contacts #discord-link {
+#contact .contacts:first-of-type {
+	margin-top: 50px;
+}
+#contact .contacts {
+	width: fit-content;
+	margin: var(--padding-around) 0;
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.13) !important;
+}
+.contacts a {
+	height: 50px;
+}
+#contact .contacts #discord-link {
 	color: #fff;
 }
-.contacts.bg-discord {
+#contact .bg-discord {
 	position: relative;
 }
-.contacts.bg-discord:hover {
-	background-color: #6a7eca;
+#contact .bg-discord:hover {
+	background-color: #6176cc;
 }
-#discord-id {
-	/* TODO: AJOUTER UNE ANIMATION DE DEPLI */
+#contact #discord-id {
 	position: absolute;
 	border: 1px solid var(--color-discord);
 	color: var(--color-discord);
 }
-#discord-id:hover {
+#contact #discord-id:hover {
 	color: #fff;
 	background-color: var(--color-discord);
-}
-
-#collapseMsg {
 }
 
 /* ---------- FOOTER */
@@ -196,22 +276,4 @@ a {
 	bottom: 25px;
 	right: 25px;
 	display: none;
-}
-
-/* ---------- ANIMATIONS */
-
-.slide-right {
-	-webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-	animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-right {
-	0% {
-		-webkit-transform: translateX(-10px);
-		transform: translateX(-10px);
-	}
-	100% {
-		-webkit-transform: translateX(20px);
-		transform: translateX(20px);
-	}
 }

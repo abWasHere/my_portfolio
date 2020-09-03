@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- styles -->
 		<link rel="stylesheet" href="./styles/style.css" />
-		<link rel="stylesheet" href="./styles/hover.css" />
 		<!-- favicon -->
 		<link
 			rel="apple-touch-icon"
@@ -64,7 +63,7 @@
 	<body>
 		<!------- navbar ------->
 		<nav
-			class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 mb-5 sticky-top"
+			class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-0 sticky-top"
 			id="navMain"
 		>
 			<button
@@ -77,8 +76,13 @@
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-				<span class="my-1 mx-2 close"><i class="fas fa-times"></i></span>
-				<span id="burger" class="navbar-toggler-icon"></span>
+				<div id="burger">
+					<div class="icon dark">
+						<span class="line top"></span>
+						<span class="line middle"></span>
+						<span class="line bottom"></span>
+					</div>
+				</div>
 			</button>
 
 			<a class="navbar-brand" id="my-name">Audrey Belson</a>
@@ -86,139 +90,158 @@
 			<div class="collapse navbar-collapse" id="navbarToggler">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item">
-						<a class="nav-link" href="#projects">Projects</a>
+						<a class="nav-link hvr-underline-reveal" href="#projects"
+							>Projects</a
+						>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
+						<a class="nav-link hvr-underline-reveal" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link hvr-underline-reveal" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<!----- end navbar ----->
 
-		<!------- showcase / jumbotron ------->
-		<div class="section jumbotron">
-			<h1 class="display-4">Full Stack Developer</h1>
-			<p class="lead">
-				I would like to code in both front and back end environments, handle
-				APIs but also creates beautiful and intuitive user interfaces. I am a
-				problem solving person, very detail oriented and organized. I make sure
-				that my code and my apps stay "clean", simple and smart.
-			</p>
+		<!------- showcase ------->
+		<div class="section bg-main padding-main disp-flex" id="showcase">
+			<div class="jumbo-text">
+				<h1 class="display-3">Full Stack Developer</h1>
+				<p class="lead">
+					I would like to code in both front and back end environments, handle
+					APIs but also creates beautiful and intuitive user interfaces. I am a
+					problem solving person, very detail oriented and organized. I make
+					sure that my code and my apps stay "clean", simple and smart.
+				</p>
 
-			<a
-				class="btn btn-outline-dark btn-lg rounded-pill"
-				id="btn-hire"
-				href="#contact"
-				role="button"
-				>Hire me !</a
-			>
+				<a
+					class="btn btn-outline-light btn-lg rounded-pill"
+					id="btn-hire"
+					href="#contact"
+					role="button"
+					>Hire me !</a
+				>
+			</div>
+			<div class="jumbo-img disp-flex disp-centered">
+				<div class="img-wrapper"></div>
+			</div>
 		</div>
-		<!----- end showcase / jumbotron ----->
+		<!----- end showcase ----->
 
-		<div class="container-lg">
+		<!------- (container) ------->
+		<div class="box padding-main">
 			<!------- projects ------->
-			<div class="section" id="projects">
-				<h3 class="section-head">My projects</h3>
-				<!-- <div class="row row-cols-3" id="cards-container"></div> -->
+			<div class="section container-sm padding-main" id="projects">
+				<h2 class="section-head">My projects</h2>
 				<div class="disp-grid" id="cards-container"></div>
 			</div>
 			<!----- end projects ----->
 
 			<!------- about ------->
-			<div class="section" id="about">
-				<h3 class="section-head">About me</h3>
-				<div class="background">
-					<p>
-						My background is <strong>project management</strong> in real estate.
-						I was required to supervise and direct various operations within
-						several housing projects. My main skills were :
-						<b
-							>team management, organization, prioritizing, planning, risk
-							management, goal setting,negociating, customer service and
-							communication.</b
-						>
-					</p>
-					<p>
-						After 6 years, I decided to switch careers. I am now a
-						<strong>web developer</strong> who aspires to thrive in the tech
-						industry.
-					</p>
+			<div class="section container-sm" id="about">
+				<div class="bg-main padding-main">
+					<h2 class="section-head">About me</h2>
+					<div class="experience">
+						<p>
+							My background is <strong>project management</strong> in real
+							estate. I was required to supervise and direct various operations
+							within several housing projects. My main skills were :
+							<b
+								>organization, prioritization, planning, risk management, goal
+								setting, negotiation, customer service and communication.</b
+							>
+						</p>
+						<p>
+							After 6 years, I decided to switch careers. I am now a
+							<strong>web developer</strong> who aspires to thrive in the tech
+							industry.
+						</p>
+						<p>
+							<b>Logic, patience, communication, and attention to detail</b> are
+							my underlying strengths. I have a knack for not panicking in the
+							face of complexity. I am into planning, building structures,
+							thinking in systems, adapting to change and learning new
+							technologies !
+						</p>
+					</div>
 				</div>
 				<div class="skills">
-					<p>
-						<b>Logic, patience, communication, and attention to detail</b> are
-						my underlying strengths. I have a knack for not panicking in the
-						face of complexity. I am into planning, building structures,
-						thinking in systems, adapting to change and learning new
-						technologies !
-					</p>
-					<h4>My skills</h4>
-					<i class="fas fa-terminal"></i>
-					<ul class="list">
-						<li class="item">JavaScript ES6, HTML5, CSS3</li>
-						<li class="item">
-							React.js, Bootstrap, Material Ui (learning), Bulma, jQuery
-						</li>
-						<li class="item">Node.js, Express.js, noSQL, MongoDB, REST API</li>
-					</ul>
-					<i class="fas fa-pencil-alt"></i>
-					<ul class="list">
-						<li class="item">VS Code, Cloudinary storage</li>
-						<li class="item">Git, GitHub</li>
-						<li class="item">Miro, Trello, Figma (learning)</li>
-						<li class="item">
-							Microsoft 365 softwares (and Google equivalents)
-						</li>
-					</ul>
-					<p>
-						<img
-							src="https://www.codewars.com/users/abWasHere/badges/micro"
-							alt="codewars badge"
-						/>
-					</p>
+					<h3>Toolbox</h3>
+					<div class="disp-flex">
+						<div class="technologies">
+							<i class="fas fa-terminal"></i>
+							<ul class="list">
+								<li class="item">JavaScript ES6, HTML5, CSS3</li>
+								<li class="item">React.js, jQuery</li>
+								<li class="item">Bootstrap, Material Ui (learning), Bulma</li>
+								<li class="item">
+									Node.js, Express.js, noSQL, MongoDB, REST API
+								</li>
+							</ul>
+						</div>
+						<div class="tools">
+							<i class="fas fa-ruler-combined"></i>
+							<ul class="list">
+								<li class="item">VS Code, Cloudinary storage</li>
+								<li class="item">Git, GitHub</li>
+								<li class="item">Miro, Trello, Figma (learning)</li>
+								<li class="item">
+									Microsoft 365 softwares (and Google equivalents)
+								</li>
+								<!-- CODEWARS BADGE -->
+								<!-- <li class="item">
+									<img
+										src="https://www.codewars.com/users/abWasHere/badges/micro"
+										alt="codewars badge"
+									/>
+								</li> -->
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!----- end about ----->
 
 			<!------- contact ------->
-			<div class="section" id="contact">
-				<div class="contacts">
-					<a
-						class="btn btn-light link-btn"
-						href="https://drive.google.com/file/d/1Eb3-YrmlpGklOaRHGTDOF4KykiIhvg9Z/view?usp=sharing"
-						target="_blank"
-					>
-						<i class="fas fa-download"></i> Download my resume
-					</a>
-				</div>
-				<div class="contacts">
-					<a
-						class="btn btn-danger link-btn"
-						href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
-					>
-						<i class="far fa-envelope"></i> Send me an email</a
-					>
-				</div>
-				<div class="contacts bg-discord">
-					<a class="btn link-btn" id="discord-link">
-						<i class="fab fa-discord"></i> Find me on Discord</a
-					>
-					<button
-						id="discord-id"
-						type="button"
-						class="btn invisible"
-						data-toggle="collapse"
-						href="#collapseMsg"
-						aria-expanded="false"
-						aria-controls="collapseMsg"
-					>
-						Audwey#0769
-						<div class="collapse" id="collapseMsg" role="alert">Copied!</div>
-					</button>
+			<div class="section container-sm" id="contact">
+				<div class="contact-buttons disp-flex disp-col">
+					<h2 class="section-head">Contact</h2>
+					<div class="contacts">
+						<a
+							class="btn btn-light link-btn"
+							href="https://drive.google.com/file/d/1Eb3-YrmlpGklOaRHGTDOF4KykiIhvg9Z/view?usp=sharing"
+							target="_blank"
+						>
+							<i class="fas fa-download"></i> Download my resume
+						</a>
+					</div>
+					<div class="contacts">
+						<a
+							class="btn btn-light link-btn"
+							href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
+						>
+							<i class="far fa-envelope"></i> Send me an email</a
+						>
+					</div>
+					<div class="contacts bg-discord">
+						<a class="btn link-btn" id="discord-link">
+							<i class="fab fa-discord"></i> Find me on Discord</a
+						>
+						<button
+							id="discord-id"
+							type="button"
+							class="btn invisible"
+							data-toggle="collapse"
+							href="#collapseMsg"
+							aria-expanded="false"
+							aria-controls="collapseMsg"
+						>
+							Audwey#0769
+							<div class="collapse" id="collapseMsg" role="alert">Copied!</div>
+						</button>
+					</div>
 				</div>
 			</div>
 			<!----- end contact ----->
@@ -233,31 +256,32 @@
 			></a>
 			<!-- end back to top button -->
 		</div>
+		<!----- (end container) ----->
 
 		<!------- footer ------->
 		<div class="footer disp-flex disp-centered disp-col bg-dark" id="footer">
 			<div class="links">
 				<!-- COMPTE DRIBBBLE A CREER -->
 				<a href="https://dribbble.com/abWasHere" target="_blank"
-					><i class="fab fa-dribbble-square"></i
+					><i class="fab fa-dribbble fa-lg linky"></i
 				></a>
 
 				<a href="https://github.com/abWasHere" target="_blank"
-					><i class="fab fa-github-square"></i
+					><i class="fab fa-github fa-lg linky"></i
 				></a>
 
 				<a
 					href="https://www.linkedin.com/in/audrey-belson-28382958/"
 					target="_blank"
-					><i class="fab fa-linkedin"></i
+					><i class="fab fa-linkedin-in fa-lg linky"></i
 				></a>
 
 				<a href="https://profiles.ironhack.com/audrey-belson" target="_blank"
-					><i class="fas fa-graduation-cap"></i
+					><i class="fas fa-graduation-cap fa-lg linky"></i
 				></a>
 			</div>
 			<div class="creator">
-				Made with <i class="fas fa-heart"></i> by Audrey Belson (September 2020)
+				Made with <i class="fas fa-heart"></i> by Audrey Belson
 			</div>
 		</div>
 		<!----- end footer ----->

@@ -2,32 +2,36 @@ import { projectsList } from "./js/projectsList.js";
 
 /* ------ insert projects */
 projectsList.map((project) => {
-	$("#cards-container").append(`<div class="col"> <div class="card id${
-		project.id
-	} shadow p-3 mb-5 bg-white rounded border-0">
-					<img src=${project.img_url} class="card-img-top" alt=${
-		project.name
-	} screenshot">
+	$("#cards-container").append(
+		`<div class="col"> <div class="card id${
+			project.id
+		} shadow p-3 bg-white rounded border-0">
+					<a href=${project.url} target="_blank"><img src=${
+			project.img_url
+		} class="card-img-top" alt=${project.name} screenshot"></a>
 					<div class="card-body">
+					<div class="card-titles">
 						<h5 class="card-title">${project.name}</h5>
 						<h6 class="card-subtitle mb-2 text-secondary ">${project.usage} - ${
-		project.release_date
-	}</h6>
+			project.release_date
+		}</h6>
+	</div>
 						<p class="card-text">${project.description}</p>
 						
 						<p class="font-italic text-black-50
 
 ">${
-		(project.personal && "Personal project") ||
-		`<i class="fas fa-code-branch"></i> Collaboration`
-	}</p>
-						<a href=${project.url} class="card-link">Demo</a>
+			(project.personal && "Personal project") ||
+			`<i class="fas fa-code-branch"></i> Collaboration`
+		}</p>
+						<a href=${project.url} class="card-link hvr-push" target="_blank">Demo</a>
 						<a href=${
 							project.source_code
-						} class="card-link"><i class="fas fa-code"></i> Source</a>
+						} class="card-link hvr-push"><i class="fas fa-code"></i> Source</a>
 					</div>
 					</div>
-				</div>`);
+				</div>`
+	);
 });
 
 /* ------ discord username popup */
@@ -78,4 +82,9 @@ $(document).ready(function () {
 		);
 		return false;
 	});
+});
+
+/* ------ burger */
+$("#burger").click(() => {
+	$(".icon").toggleClass("close");
 });

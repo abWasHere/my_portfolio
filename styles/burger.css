@@ -1,0 +1,43 @@
+#btn-menu {
+	padding: 0;
+}
+#burger {
+	position: relative;
+	cursor: pointer;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+.line {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+.icon.light .line {
+	background-color: white;
+}
+.icon.dark .line {
+	background-color: rgb(87, 87, 87);
+}
+.line.top {
+	top: 17%;
+}
+.line.middle {
+	top: 47%;
+}
+.line.bottom {
+	top: 77%;
+}
+.icon.close .top {
+	transform: rotate(45deg);
+	top: 47%;
+}
+.icon.close .middle,
+.icon.close .line.bottom {
+	transform: rotate(-45deg);
+	top: 47%;
+}
