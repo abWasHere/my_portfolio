@@ -1,47 +1,50 @@
 import { projectsList } from "./js/projectsList.js";
 
-/* ------ insert projects */
+/* GRID PROJECTS DISPLAY ----------------------------- */
 projectsList.map((project) => {
 	$("#cards-container").append(
-		`<div class="col"> <div class="card id${
-			project.id
-		} shadow p-3 bg-white rounded border-0">
-					<a href=${project.url} target="_blank"><img src=${
+		`<div class="col">
+			<div class="card id${
+				project.id
+			} shadow p-3 bg-white rounded border-0" data-aos="flip-up" data-aos-duration="1800"     data-aos-delay="400"
+ >
+			<a href=${project.url} target="_blank"><img src=${
 			project.img_url
 		} class="card-img-top" alt=${project.name} screenshot"></a>
-					<div class="card-body">
+				<div class="card-body">
 					<div class="card-titles">
 						<h5 class="card-title">${project.name}</h5>
 						<h6 class="card-subtitle mb-2 text-secondary ">${project.usage} - ${
 			project.release_date
 		}</h6>
-	</div>
-						<p class="card-text">${project.description}</p>
-						
-						<p class="font-italic text-black-50
-
-">${
-			(project.personal && "Personal project") ||
-			`<i class="fas fa-code-branch"></i> Collaboration`
-		}</p>
+					</div>
+					<p class="card-text">${project.description}</p>
+					
+					<div class="card-bottom">
+						<p class="font-italic text-black-50">${
+							(project.personal &&
+								`<i class="far fa-user-circle"></i> Personal project`) ||
+							`<i class="fas fa-code-branch"></i> Collaboration`
+						} </p>
 						<a href=${project.url} class="card-link hvr-push" target="_blank">Demo</a>
-						<a href=${
-							project.source_code
-						} class="card-link hvr-push"><i class="fas fa-code"></i> Source</a>
+						<a href=${project.source_code} class="card-link hvr-push">
+							<i class="fas fa-code"></i>						Source
+						</a>
 					</div>
-					</div>
-				</div>`
+				</div>
+			</div>
+		</div>`
 	);
 });
 
-/* ------ discord username popup */
+/* BTN DISCORD ----------------------------- */
+// ---- username popup
 function toggleDiscordName() {
 	$("#discord-id").toggleClass("slide-right invisible");
 }
-
 $("#discord-link").on("click", toggleDiscordName);
 
-/* --------- discord username copy to clipboard */
+// ---- copy username to clipboard
 var alertDisplay = false;
 $("#discord-id").on("click", () => {
 	if (alertDisplay) {
@@ -62,11 +65,12 @@ $("#discord-id").on("click", () => {
 	}
 });
 
-/* ------ FIXME: back to top button */
+/* BTN BACK-TO-TOP ----------------------------- */
 $(document).ready(function () {
 	// button fade in and fade out
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 50) {
+		if ($(this).scrollTop() > 250) {
+			$("#back-to-top").removeClass("invisible");
 			$("#back-to-top").fadeIn();
 		} else {
 			$("#back-to-top").fadeOut();
@@ -78,13 +82,13 @@ $(document).ready(function () {
 			{
 				scrollTop: 0,
 			},
-			350
+			500
 		);
 		return false;
 	});
 });
 
-/* ------ burger */
+/* BURGER ----------------------------- */
 $("#burger").click(() => {
 	$(".icon").toggleClass("close");
 });

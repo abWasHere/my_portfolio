@@ -17,5 +17,8 @@
     "url": "https://github.com/abWasHere/my_portfolio-v1/issues"
   },
   "homepage": "https://github.com/abWasHere/my_portfolio-v1#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
 }
