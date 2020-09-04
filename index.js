@@ -27,7 +27,7 @@ projectsList.map((project) => {
 							`<i class="fas fa-code-branch"></i> Collaboration`
 						} </p>
 						<a href=${project.url} class="card-link hvr-push" target="_blank">Demo</a>
-						<a href=${project.source_code} class="card-link hvr-push">
+						<a href=${project.source_code} class="card-link hvr-push" target="_blank">
 							<i class="fas fa-code"></i>						Source
 						</a>
 					</div>
