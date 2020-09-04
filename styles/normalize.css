@@ -30,5 +30,5 @@ body {
 #app-container {
   min-height: 100vh;
   margin: 0 auto;
-  min-width: 28.75em;
+  min-width: 100vw;
 }

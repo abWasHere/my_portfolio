@@ -184,7 +184,7 @@ h5.card-title {
 /* ---------- SHOWCASE */
 
 #showcase {
-	height: 90vh;
+	height: 99vh;
 }
 
 #showcase .jumbo-text {
@@ -360,13 +360,13 @@ h5.card-title {
 #back-to-top {
 	position: fixed;
 	bottom: 50px;
-	right: 45px;
+	left: 1450px;
 	display: none;
 }
 
 @media all and (max-width: 500px) {
 	#back-to-top {
-		bottom: 25px;
-		right: 25px;
+		bottom: 20px;
+		left: 300px;
 	}
 }

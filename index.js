@@ -6,7 +6,7 @@ projectsList.map((project) => {
 		`<div class="col">
 			<div class="card id${
 				project.id
-			} shadow p-3 bg-white rounded border-0" data-aos="flip-up" data-aos-duration="1800"     data-aos-delay="400"
+			} shadow p-3 bg-white rounded border-0" data-aos="flip-up" data-aos-duration="1600"     data-aos-delay="400"
  >
 			<a href=${project.url} target="_blank"><img src=${
 			project.img_url
