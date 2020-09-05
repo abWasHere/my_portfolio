@@ -1,6 +1,6 @@
 ### Hi there 👋, 
 #### Audrey Belson, Full-Stack developer based in Paris, France 
-![My pic open arms](https://github.com/abWasHere/my_portfolio/blob/master/./images/my-pic-2.jpg?raw=true =1000x1000)
+![My pic open arms](https://github.com/abWasHere/my_portfolio/blob/master/./images/my-pic-moutain.jpg?raw=true)
 
 *For me every single day is made to learn, try or build something new. I enjoy learning new libraries and frameworks. I also am interested in user experience and learning more about design.*
 
