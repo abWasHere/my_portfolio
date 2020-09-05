@@ -19,7 +19,7 @@ This portfolio is a personal project that I built in a week.
 It gathers the projects that I am the most proud of.:muscle:
 It was also the occasion to improve my knowledge of jQuery and try new animations.
 
-**My check-list**
+**Goals**
 
 1. [x] portfolio first draft
 2. [ ] add new awesome projects
