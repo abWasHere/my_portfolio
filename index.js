@@ -40,7 +40,7 @@ projectsList.map((project) => {
 /* BTN DISCORD ----------------------------- */
 // ---- username popup
 function toggleDiscordName() {
-	$("#discord-id").toggleClass("slide-right invisible");
+	$("#discord-id").toggleClass("invisible");
 }
 $("#discord-link").on("click", toggleDiscordName);
 

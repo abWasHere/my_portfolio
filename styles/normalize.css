@@ -4,31 +4,6 @@
 	box-sizing: border-box;
 }
 
-
-/* 
--------------------------------------------------------------
- thanks to Anders Ramsay - https://coderchronicles.org/2016/04/12/create-a-full-screen-layout-for-mobile-web-apps/#View_your_work_in_device_mode/ 
--------------------------------------------------------------
- */
-
-html,body {
-  box-sizing: border-box;
-}
-*, *:before, *:after { box-sizing: inherit; }
-
-html {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#app-container {
-  min-height: 100vh;
-  margin: 0 auto;
-  min-width: 100vw;
+body,html {
+	overflow-x: hidden !important
 }
