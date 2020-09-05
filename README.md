@@ -1,6 +1,6 @@
-### Hi there 👋, my name is Audrey
-####  I am a Full-Stack developer based in Paris, France 
-![ I am a Full-Stack developer based in Paris, France ](./images/my-pic-2.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+### Hi there 👋, 
+#### Audrey Belson, Full-Stack developer based in Paris, France 
+![My pic open arms](https://github.com/abWasHere/my_portfolio/blob/master/./images/my-pic-2.jpg?raw=true)
 
 For me every single day is made to learn, try or build something new. I enjoy learning new libraries and frameworks. I also am interested in user experience and learning more about design.
 
