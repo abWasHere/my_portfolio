@@ -190,7 +190,7 @@ h5.card-title {
 	flex-grow: 2;
 	width: 30%;
 	padding: 0px var(--padding-around);
-	color: #FFF;
+	color: #fff;
 }
 
 #showcase .jumbo-img {
@@ -346,8 +346,16 @@ h5.card-title {
 	color: #fff;
 }
 
-#footer .creator {
-	margin-top: 30px;
+#footer div {
+	margin: 10px;
+}
+
+#footer div:last-of-type a {
+	color: #fff;
+	font-size: 12px;
+}
+#footer div:last-of-type a:hover {
+	color: var(--danger);
 }
 
 /* ---------- BACK-TO-TOP BUTTON */

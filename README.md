@@ -16,7 +16,7 @@ I enjoy learning new libraries and frameworks. I also am interested in user expe
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=abWasHere)](https://github.com/abWasHere/github-readme-stats)
 
 This portfolio is a personal project that I built in a week.
-It gathers the projects that I am the most proud of.:muscle:
+It gathers the projects that I am the most proud of. :muscle:
 It was also the occasion to improve my knowledge of jQuery and try new animations.
 
 **Goals**
