@@ -4,9 +4,7 @@ import { projectsList } from "./js/projectsList.js";
 projectsList.map((project) => {
 	$("#cards-container").append(
 		`<div class="col">
-			<div class="card id${
-				project.id
-			} shadow p-3 bg-white rounded border-0" data-aos="flip-up" data-aos-duration="1600"     data-aos-delay="400"
+			<div class="card id${project.id} shadow p-3 bg-white rounded border-0" 
  >
 			<a href=${project.url} target="_blank"><img src=${
 			project.img_url
