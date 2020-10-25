@@ -19,8 +19,5 @@
   },
   "homepage": "https://github.com/abWasHere/my_portfolio-v1#readme",
   "type": "module",
-  "dependencies": {
-    "aos": "^3.0.0-beta.6",
-    "jquery": "^3.5.1"
-  }
+  "dependencies": {}
 }

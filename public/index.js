@@ -1,5 +1,4 @@
-import { projectsList } from "./public/js/projectsList.js";
-var $ = require("jquery");
+import { projectsList } from "./js/projectsList.js";
 
 /* GRID PROJECTS DISPLAY ----------------------------- */
 projectsList.map((project) => {
