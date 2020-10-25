@@ -1,4 +1,4 @@
-import { projectsList } from "./js/projectsList.js";
+import { projectsList } from "./public/js/projectsList.js";
 
 /* GRID PROJECTS DISPLAY ----------------------------- */
 projectsList.map((project) => {
