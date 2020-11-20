@@ -37,31 +37,31 @@ projectsList.map((project) => {
 
 /* BTN DISCORD ----------------------------- */
 // ---- username popup
-function toggleDiscordName() {
-	$("#discord-id").toggleClass("invisible");
-}
-$("#discord-link").on("click", toggleDiscordName);
+// function toggleDiscordName() {
+// 	$("#discord-id").toggleClass("invisible");
+// }
+// $("#discord-link").on("click", toggleDiscordName);
 
 // ---- copy username to clipboard
-var alertDisplay = false;
-$("#discord-id").on("click", () => {
-	if (alertDisplay) {
-		$(".alert").fadeOut();
-		toggleDiscordName();
-		alertDisplay = false;
-	} else {
-		const el = document.createElement("textarea");
-		el.value = "Audwey#0769";
-		el.setAttribute("readonly", "");
-		el.style.position = "absolute";
-		el.style.left = "-9999px";
-		document.body.appendChild(el);
-		el.select();
-		document.execCommand("copy");
-		document.body.removeChild(el);
-		alertDisplay = true;
-	}
-});
+// var alertDisplay = false;
+// $("#discord-id").on("click", () => {
+// 	if (alertDisplay) {
+// 		$(".alert").fadeOut();
+// 		toggleDiscordName();
+// 		alertDisplay = false;
+// 	} else {
+// 		const el = document.createElement("textarea");
+// 		el.value = "Audwey#0769";
+// 		el.setAttribute("readonly", "");
+// 		el.style.position = "absolute";
+// 		el.style.left = "-9999px";
+// 		document.body.appendChild(el);
+// 		el.select();
+// 		document.execCommand("copy");
+// 		document.body.removeChild(el);
+// 		alertDisplay = true;
+// 	}
+// });
 
 /* BTN BACK-TO-TOP ----------------------------- */
 $(document).ready(function () {

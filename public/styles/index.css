@@ -12,7 +12,7 @@
 :root {
 	--bg-main-colored: #3333cc;
 	--color-react: #61dafb;
-	--color-discord: #7289da;
+	/* --color-discord: #7289da; */
 	--color-grey: #414141;
 	--padding-around: 20px;
 }
@@ -142,7 +142,6 @@ div.creator {
 h2.section-head {
 	font-weight: 200;
 	font-size: 2.5em;
-	color: var(--color-grey);
 }
 
 h5.card-title {
@@ -282,13 +281,14 @@ h5.card-title {
 
 #about .skills h3 {
 	text-align: center;
+	font-size: 40px;
+	font-weight: 200;
 }
 
-#about .skills .disp-flex {
+#about .skills > div.disp-flex {
 	padding: var(--padding-around);
 	align-items: flex-start;
 	justify-content: space-around;
-	border-bottom: 1px grey solid;
 }
 
 @media all and (max-width: 800px) {
@@ -298,13 +298,32 @@ h5.card-title {
 		align-items: center;
 	}
 }
+
 /* about lists */
+
+.technologies .list,
+.tools .list {
+	width: 400px;
+	flex-flow: wrap;
+	align-content: center;
+}
 
 .list .item {
 	list-style-type: none;
+	box-shadow: 1px 1px 5px rgb(196, 196, 196);
+	border-radius: 3px;
+	width: fit-content;
+	padding: 1px 15px;
+	margin: 8px;
 }
 
 /* ---------- CONTACT */
+
+#contact {
+	background-color: rgb(36, 36, 37);
+	border-radius: 20px;
+	color: #fff;
+}
 
 #contact .contacts:first-of-type {
 	margin-top: 50px;
@@ -316,11 +335,11 @@ h5.card-title {
 	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.13) !important;
 }
 
-#contact .contacts #discord-link {
+/* #contact .contacts #discord-link {
 	color: #fff;
-}
+} */
 
-#contact .bg-discord {
+/* #contact .bg-discord {
 	position: relative;
 }
 
@@ -336,7 +355,7 @@ h5.card-title {
 #contact #discord-id:hover {
 	color: #fff;
 	background-color: var(--color-discord);
-}
+} */
 
 /* ---------- FOOTER */
 
