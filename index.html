@@ -69,7 +69,7 @@
 		<title>Audrey Belson | Full-Stack Developer</title>
 	</head>
 
-	<body>
+	<body class="bg-radient">
 		<!------- navbar ------->
 		<nav
 			class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-0 sticky-top"
@@ -144,7 +144,7 @@
 		<div class="padding-main" id="main-container">
 			<!------- projects ------->
 			<div class="section container-sm padding-main" id="projects">
-				<h2 class="section-head">My projects</h2>
+				<h2 class="section-head">Projects</h2>
 				<div class="disp-grid" id="cards-container"></div>
 			</div>
 
@@ -182,13 +182,14 @@
 					</div>
 				</div>
 				<div class="skills">
-					<h3>Skills</h3>
+					<h3>tools</h3>
 					<div
 						class="disp-flex"
 						data-aos="zoom-in-down"
 						data-aos-duration="1500"
 					>
-						<div class="technologies">
+						<div class="technologies front-end">
+							<h4>front-end</h4>
 							<ul class="list disp-flex">
 								<li class="item">JavaScript ES6</li>
 								<li class="item">HTML5 CSS3</li>
@@ -199,19 +200,31 @@
 								<li class="item">Bootstrap</li>
 								<li class="item">Material Ui</li>
 								<li class="item">Bulma</li>
+							</ul>
+						</div>
+						<div class="technologies back-end">
+							<h4>back-end</h4>
+							<ul class="list disp-flex">
 								<li class="item">Node.js</li>
 								<li class="item">Express.js</li>
 								<li class="item">MongoDB</li>
 								<li class="item">APIs</li>
+								<li class="item">Cloudinary storage</li>
 							</ul>
 						</div>
-						<div class="tools">
+						<div class="tools workflow">
+							<h4>workflow</h4>
 							<ul class="list disp-flex">
 								<li class="item">VS Code</li>
-								<li class="item">Cloudinary storage</li>
 								<li class="item">Git</li>
 								<li class="item">GitHub</li>
+								<li class="item">Heroku</li>
 								<li class="item">Firebase</li>
+							</ul>
+						</div>
+						<div class="tools prototyping">
+							<h4>design</h4>
+							<ul class="list disp-flex">
 								<li class="item">Trello</li>
 								<li class="item">Miro</li>
 								<li class="item">Figma</li>
@@ -223,46 +236,49 @@
 
 			<!------- contact ------->
 			<div class="section container-sm" id="contact">
-				<div class="contact-buttons disp-flex disp-col">
+				<div class="contacts disp-flex disp-col">
 					<h2 class="section-head">Contact</h2>
-					<div class="contacts" data-aos="slide-right" data-aos-duration="1000">
-						<a
-							class="btn btn-light link-btn btn-lg"
-							href="./public/assets/resume/resume_audrey_belson_20200904.pdf"
-							target="_blank"
-						>
-							<i class="fas fa-download"></i> Download my resume
-						</a>
-					</div>
-					<div class="contacts" data-aos="slide-left" data-aos-duration="1000">
-						<a
-							class="btn btn-light link-btn btn-lg"
-							href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
-						>
-							<i class="far fa-envelope"></i> Send me an email</a
-						>
-					</div>
-					<!-- <div
-						class="contacts bg-discord"
+
+					<div
+						class="contact btn-outline-light"
 						data-aos="slide-right"
 						data-aos-duration="1000"
 					>
-						<a class="btn link-btn btn-lg" id="discord-link">
-							<i class="fab fa-discord"></i> Find me on Discord</a
+						<a href="https://www.linkedin.com/in/audrey-belson/" target="_blank"
+							>LinkedIn</a
 						>
 					</div>
-					<button
-						id="discord-id"
-						type="button"
-						class="btn invisible"
-						data-toggle="collapse"
-						href="#collapseMsg"
-						aria-expanded="false"
-						aria-controls="collapseMsg"
+					<div
+						class="contact btn-outline-light"
+						data-aos="slide-left"
+						data-aos-duration="1000"
 					>
-						Audwey#0769
-						<div class="collapse" id="collapseMsg" role="alert">Copied!</div>
-					</button> -->
+						<a
+							href="mailto:audrey.belson@mail.fr?subject=Let's%20get%20in%20touch&body=Hi%20Audrey,%20I%20just%20saw%20you%20portfolio!"
+						>
+							Email</a
+						>
+					</div>
+					<div
+						class="contact btn-outline-light hidding"
+						data-aos="slide-right"
+						data-aos-duration="1000"
+					>
+						<span>Phone</span>
+						<p class="contact-hidden">
+							<b>(+33) 06 16 94 61 21</b>
+						</p>
+					</div>
+					<div
+						class="contact btn-outline-light hidding"
+						data-aos="slide-left"
+						data-aos-duration="1000"
+					>
+						<span>Availability</span>
+						<p class="contact-hidden">
+							<b>Now</b> > Paris Area or Remote (Europe)
+						</p>
+					</div>
 				</div>
 			</div>
 
@@ -270,7 +286,7 @@
 			<a
 				id="back-to-top"
 				href="#"
-				class="btn btn-light btn-lg rounded-circle shadow invisible"
+				class="btn btn-light btn-lg rounded-circle shadow-lg invisible"
 				role="button"
 				><i class="fas fa-chevron-up"></i
 			></a>
@@ -278,20 +294,13 @@
 		</div>
 
 		<!------- footer ------->
-		<div class="footer disp-flex disp-centered disp-col bg-dark" id="footer">
+		<div class="footer disp-flex disp-centered disp-col" id="footer">
 			<div class="links">
-				<!-- DRIBBBLE : to be completed -->
-				<!-- <a href="https://dribbble.com/abWasHere" target="_blank"
-					><i class="fab fa-dribbble fa-lg linky"></i
-				></a> -->
-
 				<a href="https://github.com/abWasHere" target="_blank"
 					><i class="fab fa-github fa-lg linky"></i
 				></a>
 
-				<a
-					href="https://www.linkedin.com/in/audrey-belson-28382958/"
-					target="_blank"
+				<a href="https://www.linkedin.com/in/audrey-belson/" target="_blank"
 					><i class="fab fa-linkedin-in fa-lg linky"></i
 				></a>
 
@@ -315,14 +324,10 @@
 		<script>
 			AOS.init();
 		</script>
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+		<!-- Firebase -->
 		<script src="/__/firebase/7.24.0/firebase-app.js"></script>
-
-		<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 		<script src="/__/firebase/7.24.0/firebase-analytics.js"></script>
-
-		<!-- Initialize Firebase -->
 		<script src="/__/firebase/init.js"></script>
 	</body>
 </html>
