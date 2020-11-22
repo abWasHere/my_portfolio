@@ -129,7 +129,7 @@ h2.section-head {
 /* ---------- SHOWCASE */
 
 #showcase {
-	height: 89vh;
+	min-height: 89vh;
 }
 
 #showcase .jumbo-text {
@@ -161,16 +161,26 @@ h2.section-head {
 		flex-direction: column;
 		padding: 0;
 	}
+
 	#showcase .jumbo-text {
 		padding: 20px;
 		width: 100%;
 	}
+
+	#showcase .jumbo-text .lead {
+		font-size: 1em;
+	}
+
+	#showcase .jumbo-text h1 {
+		font-size: 3em;
+	}
+
 	#showcase .jumbo-img {
 		margin-bottom: 20px;
 	}
 	#showcase .jumbo-img .img-wrapper {
-		width: 200px;
-		height: 200px;
+		width: 240px;
+		height: 240px;
 	}
 }
 
@@ -179,11 +189,11 @@ h2.section-head {
 		font-size: 3em;
 	}
 	#showcase .jumbo-text {
-		padding-bottom: 0;
+		padding-bottom: 20px;
 	}
 	#showcase .jumbo-img .img-wrapper {
-		width: 150px;
-		height: 150px;
+		width: 170px;
+		height: 170px;
 	}
 }
 
