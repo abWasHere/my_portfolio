@@ -189,7 +189,7 @@ h2.section-head {
 	}
 }
 
-@media (max-width: 500px) {
+@media all and (max-width: 500px) {
 	#showcase .jumbo-text h1 {
 		font-size: 3em;
 	}
@@ -217,7 +217,7 @@ h2.section-head {
 	}
 }
 
-@media (max-width: 576px) {
+@media all and (max-width: 576px) {
 	.disp-grid {
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
@@ -341,7 +341,7 @@ h2.section-head {
 	margin-bottom: 4px;
 }
 
-@media (max-width: 800px) {
+@media all and (max-width: 800px) {
 	.project-subtitle {
 		font-size: 0.7em;
 	}
@@ -534,7 +534,7 @@ h2.section-head {
 	visibility: visible;
 }
 
-@media (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 	#contact {
 		max-width: 700px;
 	}
