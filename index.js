@@ -7,7 +7,7 @@ projectsList.map((project) => {
 		`
 			<div class="col id${project.id} ">
 
-				<img src=${project.img_url} class="project-img" alt=${project.name} screenshot">
+				<img src=${project.img_url} class="project-img" alt="project capture">
 
 				<div class="project-content">
 					

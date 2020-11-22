@@ -3,12 +3,10 @@
 @import "./normalize.css";
 
 /* ---------- FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 
 /* ---------- VARIABLES */
-
 :root {
 	--bg-main-color: #13125252;
 	--links-color: rgb(118, 87, 255);
@@ -19,7 +17,6 @@
 }
 
 /* ---------- BACKGROUNDS */
-
 .bg-main {
 	background-color: var(--bg-main-color);
 	color: whitesmoke;
@@ -54,6 +51,10 @@
 }
 
 /* section --- */
+.padding-main {
+	padding: 30px var(--padding-around) 100px;
+}
+
 @media all and (min-width: 800px) {
 	.section {
 		padding: 90px 0;
@@ -63,10 +64,6 @@
 	.section {
 		padding: 40px 0;
 	}
-}
-
-.padding-main {
-	padding: 30px var(--padding-around) 100px;
 }
 
 /* ---------- GENERAL */
@@ -99,18 +96,6 @@ h2.section-head {
 	font-family: var(--titles-font);
 	border-bottom: 1px solid rgb(145, 23, 245);
 	width: fit-content;
-	padding-bottom: 8px;
-}
-
-#about .skills h3 {
-	font-weight: 300;
-	font-family: var(--titles-font);
-	text-align: center;
-	font-size: 30px;
-	color: #ffffff;
-	border-bottom: 1px dotted rgba(255, 255, 255, 0.349);
-	width: fit-content;
-	margin: auto;
 	padding-bottom: 8px;
 }
 
@@ -204,43 +189,10 @@ h2.section-head {
 
 /* ---------- PROJECTS */
 
-/* grid --- */
-.disp-grid {
+#projects .disp-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 	grid-gap: 40px;
-}
-
-@media all and (min-width: 800px) {
-	.disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	}
-}
-
-@media all and (max-width: 576px) {
-	.disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	}
-	#projects .col:hover .project-content {
-		padding: 2% 6% !important;
-	}
-	.project-name {
-		font-size: 1.2em !important;
-	}
-	.project-description {
-		font-size: 1em;
-		font-weight: bold;
-		line-height: 1em;
-		padding-bottom: 5px;
-	}
-	.project-tags {
-		font-size: 0.69em !important;
-	}
-	.project-links a {
-		font-size: 0.8em !important;
-		padding: 2px;
-		min-width: 90px !important;
-	}
 }
 
 #projects {
@@ -285,10 +237,10 @@ h2.section-head {
 	color: white;
 	padding: 6% 9%;
 	text-align: center;
-	animation: appearing 0.7s;
+	animation: appearing 1.1s;
 }
 
-.project-name {
+#projects .project-name {
 	font-size: 1.6em;
 	font-family: var(--titles-font);
 	font-weight: bold;
@@ -296,33 +248,33 @@ h2.section-head {
 	margin: 0;
 }
 
-.project-subtitle {
+#projects .project-subtitle {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.342);
 	justify-content: space-between;
 	font-size: 13px;
 	padding: 0;
 }
 
-.project-date {
+#projects .project-date {
 	font-weight: bold;
 }
 
-.project-description {
+#projects .project-description {
 	font-size: 1.2em;
 	font-weight: bold;
 }
 
-.project-tags {
+#projects .project-tags {
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	word-spacing: 5px;
 	line-height: 1.1em;
 }
 
-.project-links {
+#projects .project-links {
 	justify-content: space-around;
 }
-.project-links a {
+#projects .project-links a {
 	color: #fff;
 	font-weight: bold;
 	padding: 2px 10px;
@@ -331,7 +283,7 @@ h2.section-head {
 	border-radius: 2px;
 	border: 1px solid rgba(255, 255, 255, 0.342);
 }
-.project-links a:hover {
+#projects .project-links a:hover {
 	color: var(--links-color);
 	background-color: #fff;
 	text-decoration: none;
@@ -341,17 +293,49 @@ h2.section-head {
 	margin-bottom: 4px;
 }
 
+@media all and (min-width: 800px) {
+	#projects .disp-grid {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+}
+
 @media all and (max-width: 800px) {
-	.project-subtitle {
+	#projects .project-subtitle {
 		font-size: 0.7em;
 	}
-	.project-description {
+	#projects .project-description {
 		font-size: 0.9em;
 		font-weight: 500;
 	}
-	.project-tags {
+	#projects .project-tags {
 		font-size: 0.8em;
 		line-height: 1em;
+	}
+}
+
+@media all and (max-width: 576px) {
+	#projects .disp-grid {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+	#projects .col:hover .project-content {
+		padding: 2% 6% !important;
+	}
+	#projects .project-name {
+		font-size: 1.2em !important;
+	}
+	#projects .project-description {
+		font-size: 1em;
+		font-weight: bold;
+		line-height: 1em;
+		padding-bottom: 5px;
+	}
+	#projects .project-tags {
+		font-size: 0.69em !important;
+	}
+	#projects .project-links a {
+		font-size: 0.8em !important;
+		padding: 2px;
+		min-width: 90px !important;
 	}
 }
 
@@ -380,6 +364,22 @@ h2.section-head {
 	text-align: center;
 }
 
+#about .skills h3 {
+	font-weight: 300;
+	font-family: var(--titles-font);
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.349);
+	width: fit-content;
+	margin: auto;
+	padding-bottom: 8px;
+}
+
+#about .skills h4 {
+	font-size: 16px;
+}
+
 #about .skills > div.disp-flex {
 	padding: var(--padding-around);
 	align-items: flex-start;
@@ -395,16 +395,6 @@ h2.section-head {
 	}
 }
 
-/* about list items */
-
-.technologies .list,
-.tools .list {
-	width: 230px;
-	flex-flow: wrap;
-	align-content: center;
-	justify-content: center;
-}
-
 @media all and (max-width: 900px) {
 	#about .skills > div.disp-flex {
 		padding: 0;
@@ -414,16 +404,18 @@ h2.section-head {
 		align-content: center;
 		justify-content: space-around;
 	}
-	.technologies .list,
-	.tools .list {
-		width: 230px;
-		flex-flow: wrap;
-		align-content: center;
-		justify-content: center;
-	}
 }
 
-.list .item {
+/* about list items */
+
+.skills .technologies .list,
+.skills .tools .list {
+	width: 230px;
+	flex-flow: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.skills .list .item {
 	list-style-type: none;
 	border-radius: 2px;
 	width: fit-content;
@@ -433,13 +425,6 @@ h2.section-head {
 	font-size: 13px;
 }
 
-.skills h4 {
-	font-size: 16px;
-}
-
-.skills h4 {
-	font-size: 16px;
-}
 .front-end h4 {
 	color: rgb(132, 208, 243);
 }
@@ -557,11 +542,12 @@ h2.section-head {
 	color: #43217b;
 	font-size: 12px;
 }
+
 #footer div:last-of-type a:hover {
 	color: var(--links-color);
 }
 
-/* icons */
+/* footer icons */
 .fa-heart {
 	color: var(--danger);
 }
