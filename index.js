@@ -7,7 +7,7 @@ projectsList.map((project) => {
 		`
 			<div class="col id${project.id} ">
 
-				<img src=${project.img_url} class="project-img" alt="project capture">
+				<img src=${project.img_url} class="project-img" alt="project capture"/>
 
 				<div class="project-content">
 					
@@ -15,26 +15,28 @@ projectsList.map((project) => {
 
 					<div class="project-subtitle disp-flex">
 						<p class="project-date">${project.release_date}</p>
-					<p class="project-collaboration">${
-						(project.personal &&
-							`<i class="fas fa-user"></i> Personal project`) ||
-						`<i class="fas fa-users"></i> Collaboration`
-					}
-					</p>
+						<p class="project-collaboration">${
+							(project.personal &&
+								`<i class="fas fa-user"></i> Personal project`) ||
+							`<i class="fas fa-users"></i> Collaboration`
+						}
+						</p>
+					</div>
 
-				</div>
 					
-				<p class="project-description">${project.description}</p>
-				<p class="project-tags">${project.tags}</p>
-						
-
-				<div class="disp-flex disp-centered project-links"> 
-					<a href=${project.url} class="hvr-push" target="_blank"> URL</a>
-					<a href=${
-						project.source_code
-					} class="hvr-push" target="_blank"><i class="fas fa-code"></i> Source</a>
+					<p class="project-description">${project.description}</p>
+					
+					<p class="project-tags">${project.tags}</p>
+					
+					<div class="disp-flex disp-centered project-links"> 
+						<a href=${project.url} class="hvr-push" target="_blank"> URL</a>
+						<a href=${
+							project.source_code
+						} class="hvr-push" target="_blank"><i class="fas fa-code"></i> Source</a>
+					</div>
+					
 				</div>
-
+				
 			</div>
 		`
 	);
