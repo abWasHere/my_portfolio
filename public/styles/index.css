@@ -68,8 +68,9 @@
 	padding: 50px var(--padding-around) 100px;
 }
 
-/* ---------- ICONS */
+/* ---------- GENERAL */
 
+/* icons */
 .fa-heart {
 	color: var(--danger);
 }
@@ -88,7 +89,7 @@
 	color: var(--danger);
 }
 
-/* LINKS */
+/* links */
 
 a {
 	color: inherit;
@@ -98,7 +99,7 @@ a:hover {
 	text-decoration: none;
 }
 
-/* TITLES & FONTS */
+/* titles and fonts */
 
 #my-name,
 #btn-hire,
@@ -162,7 +163,7 @@ h2.section-head {
 /* ---------- SHOWCASE */
 
 #showcase {
-	height: 99vh;
+	height: 91vh;
 }
 
 #showcase .jumbo-text {
@@ -204,6 +205,19 @@ h2.section-head {
 	#showcase .jumbo-img .img-wrapper {
 		width: 200px;
 		height: 200px;
+	}
+}
+
+@media (max-width: 500px) {
+	#showcase .jumbo-text h1 {
+		font-size: 3em;
+	}
+	#showcase .jumbo-text {
+		padding-bottom: 0;
+	}
+	#showcase .jumbo-img .img-wrapper {
+		width: 150px;
+		height: 150px;
 	}
 }
 
