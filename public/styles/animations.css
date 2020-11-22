@@ -20,126 +20,22 @@
 	}
 }
 
-.shadow-drop-center {
-	-webkit-animation: shadow-drop-center 0.4s
-		cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-	animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-/* ---------- HOVER */
-/*!
- * Hover.css (http://ianlunn.github.io/Hover/)
- * Version: 2.3.2
- * Author: Ian Lunn @IanLunn
- * Author URL: http://ianlunn.co.uk/
- * Github: https://github.com/IanLunn/Hover
- * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
- */
-
-/* Push */
-@-webkit-keyframes hvr-push {
-	50% {
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-}
-@keyframes hvr-push {
-	50% {
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-}
-.hvr-push {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-push:hover,
-.hvr-push:focus,
-.hvr-push:active {
-	-webkit-animation-name: hvr-push;
-	animation-name: hvr-push;
-	-webkit-animation-duration: 0.3s;
-	animation-duration: 0.3s;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-}
-
-/* Bob */
-@-webkit-keyframes hvr-bob {
+@keyframes growing-sliding {
 	0% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
-	}
-	50% {
-		-webkit-transform: translateY(-4px);
-		transform: translateY(-4px);
+		font-size: 0;
+		transform: translateX(-100px);
 	}
 	100% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
+		font-size: 15px;
+		transform: translateX(0px);
 	}
 }
-@keyframes hvr-bob {
+
+@keyframes appearing {
 	0% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
-	}
-	50% {
-		-webkit-transform: translateY(-4px);
-		transform: translateY(-4px);
+		opacity: 0.1;
 	}
 	100% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
+		opacity: 1;
 	}
-}
-@-webkit-keyframes hvr-bob-float {
-	100% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
-	}
-}
-@keyframes hvr-bob-float {
-	100% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
-	}
-}
-.hvr-bob {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-bob:hover,
-.hvr-bob:focus,
-.hvr-bob:active {
-	-webkit-animation-name: hvr-bob-float, hvr-bob;
-	animation-name: hvr-bob-float, hvr-bob;
-	-webkit-animation-duration: 0.3s, 1.5s;
-	animation-duration: 0.3s, 1.5s;
-	-webkit-animation-delay: 0s, 0.3s;
-	animation-delay: 0s, 0.3s;
-	-webkit-animation-timing-function: ease-out, ease-in-out;
-	animation-timing-function: ease-out, ease-in-out;
-	-webkit-animation-iteration-count: 1, infinite;
-	animation-iteration-count: 1, infinite;
-	-webkit-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-	-webkit-animation-direction: normal, alternate;
-	animation-direction: normal, alternate;
 }

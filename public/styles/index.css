@@ -10,7 +10,8 @@
 /* ---------- VARIABLES */
 
 :root {
-	--bg-main-colored: #2f3869;
+	--bg-main-color: #13125252;
+	--links-color: rgb(118, 87, 255);
 	--padding-around: 20px;
 	--cursive-font: "Lobster", cursive, sans-serif;
 	--cursive-font-light: "Lobster Two", cursive, sans-serif;
@@ -20,7 +21,7 @@
 /* ---------- BACKGROUNDS */
 
 .bg-main {
-	background-color: var(--bg-main-colored);
+	background-color: var(--bg-main-color);
 	color: whitesmoke;
 }
 
@@ -65,32 +66,12 @@
 }
 
 .padding-main {
-	padding: 50px var(--padding-around) 100px;
+	padding: 30px var(--padding-around) 100px;
 }
 
 /* ---------- GENERAL */
 
-/* icons */
-.fa-heart {
-	color: var(--danger);
-}
-
-.fa-file-download,
-.fa-discord,
-.linky {
-	color: #fff;
-}
-
-.linky {
-	margin: 15px;
-}
-
-.linky:hover {
-	color: var(--danger);
-}
-
 /* links */
-
 a {
 	color: inherit;
 }
@@ -100,7 +81,6 @@ a:hover {
 }
 
 /* titles and fonts */
-
 #my-name,
 #btn-hire,
 div.creator {
@@ -108,6 +88,7 @@ div.creator {
 }
 
 #my-name {
+	color: #43217b;
 	font-size: 2.1em;
 }
 
@@ -156,14 +137,14 @@ h2.section-head {
 }
 
 #navMain .nav-link:hover {
-	color: var(--bg-main-colored);
+	color: var(--bg-main-color);
 	font-weight: 500;
 }
 
 /* ---------- SHOWCASE */
 
 #showcase {
-	height: 91vh;
+	height: 89vh;
 }
 
 #showcase .jumbo-text {
@@ -304,6 +285,7 @@ h2.section-head {
 	color: white;
 	padding: 6% 9%;
 	text-align: center;
+	animation: appearing 0.7s;
 }
 
 .project-name {
@@ -350,7 +332,8 @@ h2.section-head {
 	border: 1px solid rgba(255, 255, 255, 0.342);
 }
 .project-links a:hover {
-	color: #fff;
+	color: var(--links-color);
+	background-color: #fff;
 	text-decoration: none;
 }
 
@@ -512,7 +495,7 @@ h2.section-head {
 }
 
 #contact .contacts .contact a {
-	color: rgb(118, 87, 255);
+	color: var(--links-color);
 	text-decoration: none;
 }
 
@@ -526,7 +509,7 @@ h2.section-head {
 
 .contact-hidden {
 	position: absolute;
-	bottom: -100%;
+	left: -100%;
 	font-size: 15px;
 	line-height: 16px;
 	width: 100%;
@@ -538,8 +521,11 @@ h2.section-head {
 }
 
 .contact.hidding:hover .contact-hidden {
+	left: 0;
 	top: 0;
-	color: rgb(118, 87, 255);
+	animation-name: growing-sliding;
+	animation-duration: 0.5s;
+	color: var(--links-color);
 	height: 60px;
 	display: flex;
 	flex-direction: column;
@@ -557,22 +543,39 @@ h2.section-head {
 /* ---------- FOOTER */
 
 #footer {
-	height: 300px;
+	height: 200px;
 	text-align: center;
-	color: #fff;
-	/* background-color: #170e1f; */
+	color: #43217b;
+	background-color: #f8f9fa;
 }
 
 #footer div {
-	margin: 10px;
+	margin: 5px;
 }
 
 #footer div:last-of-type a {
-	color: #fff;
+	color: #43217b;
 	font-size: 12px;
 }
 #footer div:last-of-type a:hover {
+	color: var(--links-color);
+}
+
+/* icons */
+.fa-heart {
 	color: var(--danger);
+}
+
+.linky {
+	color: #43217b;
+}
+
+.linky {
+	margin: 18px;
+}
+
+.linky:hover {
+	color: var(--links-color);
 }
 
 /* ---------- BACK-TO-TOP BUTTON */
