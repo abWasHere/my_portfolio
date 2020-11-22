@@ -1,8 +1,16 @@
-/* @media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 	#contact {
 		max-width: 700px;
 	}
 }
+@media all and (min-width: 800px) {
+	.section {
+		padding: 90px 0;
+	}
+	/* .disp-grid {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) !important;
+	}
+} */
 
 @media all and (max-width: 900px) {
 	#about .skills > div.disp-flex {
@@ -14,7 +22,7 @@
 		justify-content: space-around;
 	}
 	#about .technologies .list,
-	.tools .list {
+	#about .tools .list {
 		width: 230px;
 		flex-flow: wrap;
 		align-content: center;
@@ -22,19 +30,10 @@
 	}
 }
 
-@media all and (min-width: 800px) {
-	.section {
-		padding: 90px 0;
-	}
-	.disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	}
-}
 @media all and (max-width: 800px) {
 	.section {
 		padding: 40px 0;
 	}
-
 	#showcase {
 		display: flex;
 		flex-direction: column;
@@ -42,7 +41,7 @@
 	}
 	#showcase .jumbo-text {
 		padding: 20px;
-		width: 100%;
+		width: 100% !important ;
 	}
 	#showcase .jumbo-img {
 		margin-bottom: 20px;
@@ -62,7 +61,6 @@
 		font-size: 0.8em;
 		line-height: 1em;
 	}
-
 	#about .skills .disp-flex,
 	#about h3 {
 		flex-direction: column;
@@ -71,9 +69,6 @@
 }
 
 @media all and (max-width: 576px) {
-	.disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	}
 	#showcase .jumbo-text h1 {
 		font-size: 3em;
 	}
@@ -83,6 +78,9 @@
 	#showcase .jumbo-img .img-wrapper {
 		width: 150px;
 		height: 150px;
+	}
+	.disp-grid {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
 	#projects .col:hover .project-content {
 		padding: 2% 6% !important;
@@ -104,7 +102,10 @@
 		padding: 2px;
 		min-width: 90px !important;
 	}
+}
+
+@media all and (max-width: 500px) {
 	#back-to-top {
 		bottom: 10px;
 	}
-} */
+}
