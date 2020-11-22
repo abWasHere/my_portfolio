@@ -7,7 +7,7 @@ export const projectsList = [
 		tags: "#react #API #materialUI #bootstrap #chartJS #firebase",
 		url: "https://nba-stats-2020.web.app",
 		source_code: "https://github.com/abWasHere/nba-stats",
-		img_url: "./public/images/nba-stats-capture.jpg",
+		img_url: "./public/images/nba-stats-capture.JPG",
 		release_date: "10/2020",
 		personal: true,
 	},
