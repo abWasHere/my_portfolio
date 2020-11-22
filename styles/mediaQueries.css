@@ -1,0 +1,110 @@
+/* @media all and (min-width: 1200px) {
+	#contact {
+		max-width: 700px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	#about .skills > div.disp-flex {
+		padding: 0;
+		margin: 30px auto 0;
+		max-width: 500px;
+		flex-flow: wrap;
+		align-content: center;
+		justify-content: space-around;
+	}
+	#about .technologies .list,
+	.tools .list {
+		width: 230px;
+		flex-flow: wrap;
+		align-content: center;
+		justify-content: center;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.section {
+		padding: 90px 0;
+	}
+	.disp-grid {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+}
+@media all and (max-width: 800px) {
+	.section {
+		padding: 40px 0;
+	}
+
+	#showcase {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	#showcase .jumbo-text {
+		padding: 20px;
+		width: 100%;
+	}
+	#showcase .jumbo-img {
+		margin-bottom: 20px;
+	}
+	#showcase .jumbo-img .img-wrapper {
+		width: 200px;
+		height: 200px;
+	}
+	#projects .project-subtitle {
+		font-size: 0.7em;
+	}
+	#projects .project-description {
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+	#projects .project-tags {
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+
+	#about .skills .disp-flex,
+	#about h3 {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.disp-grid {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+	#showcase .jumbo-text h1 {
+		font-size: 3em;
+	}
+	#showcase .jumbo-text {
+		padding-bottom: 0;
+	}
+	#showcase .jumbo-img .img-wrapper {
+		width: 150px;
+		height: 150px;
+	}
+	#projects .col:hover .project-content {
+		padding: 2% 6% !important;
+	}
+	#projects .project-name {
+		font-size: 1.2em !important;
+	}
+	#projects .project-description {
+		font-size: 1em;
+		font-weight: bold;
+		line-height: 1em;
+		padding-bottom: 5px;
+	}
+	#projects .project-tags {
+		font-size: 0.69em !important;
+	}
+	#projects .project-links a {
+		font-size: 0.8em !important;
+		padding: 2px;
+		min-width: 90px !important;
+	}
+	#back-to-top {
+		bottom: 10px;
+	}
+} */

@@ -1,14 +1,13 @@
 @import "./animations.css";
 @import "./burger.css";
 @import "./normalize.css";
+@import "./mediaQueries.css";
 
 /* ---------- FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 
 /* ---------- VARIABLES */
-
 :root {
 	--bg-main-color: #13125252;
 	--links-color: rgb(118, 87, 255);
@@ -19,7 +18,6 @@
 }
 
 /* ---------- BACKGROUNDS */
-
 .bg-main {
 	background-color: var(--bg-main-color);
 	color: whitesmoke;
@@ -54,17 +52,6 @@
 }
 
 /* section --- */
-@media all and (min-width: 800px) {
-	.section {
-		padding: 90px 0;
-	}
-}
-@media all and (max-width: 800px) {
-	.section {
-		padding: 40px 0;
-	}
-}
-
 .padding-main {
 	padding: 30px var(--padding-around) 100px;
 }
@@ -170,38 +157,6 @@ h2.section-head {
 	background: url("./../images/my-pic.jpg") no-repeat center / cover;
 }
 
-@media all and (max-width: 800px) {
-	#showcase {
-		display: flex;
-		flex-direction: column;
-		padding: 0;
-	}
-	#showcase .jumbo-text {
-		padding: 20px;
-		width: 100%;
-	}
-	#showcase .jumbo-img {
-		margin-bottom: 20px;
-	}
-	#showcase .jumbo-img .img-wrapper {
-		width: 200px;
-		height: 200px;
-	}
-}
-
-@media all and (max-width: 500px) {
-	#showcase .jumbo-text h1 {
-		font-size: 3em;
-	}
-	#showcase .jumbo-text {
-		padding-bottom: 0;
-	}
-	#showcase .jumbo-img .img-wrapper {
-		width: 150px;
-		height: 150px;
-	}
-}
-
 /* ---------- PROJECTS */
 
 /* grid --- */
@@ -209,38 +164,6 @@ h2.section-head {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 	grid-gap: 40px;
-}
-
-@media all and (min-width: 800px) {
-	.disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	}
-}
-
-@media all and (max-width: 576px) {
-	.disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	}
-	#projects .col:hover .project-content {
-		padding: 2% 6% !important;
-	}
-	.project-name {
-		font-size: 1.2em !important;
-	}
-	.project-description {
-		font-size: 1em;
-		font-weight: bold;
-		line-height: 1em;
-		padding-bottom: 5px;
-	}
-	.project-tags {
-		font-size: 0.69em !important;
-	}
-	.project-links a {
-		font-size: 0.8em !important;
-		padding: 2px;
-		min-width: 90px !important;
-	}
 }
 
 #projects {
@@ -341,20 +264,6 @@ h2.section-head {
 	margin-bottom: 4px;
 }
 
-@media all and (max-width: 800px) {
-	.project-subtitle {
-		font-size: 0.7em;
-	}
-	.project-description {
-		font-size: 0.9em;
-		font-weight: 500;
-	}
-	.project-tags {
-		font-size: 0.8em;
-		line-height: 1em;
-	}
-}
-
 /* ---------- ABOUT */
 
 #about {
@@ -387,14 +296,6 @@ h2.section-head {
 	margin-top: 20px;
 }
 
-@media all and (max-width: 800px) {
-	#about .skills .disp-flex,
-	#about h3 {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
 /* about list items */
 
 .technologies .list,
@@ -403,24 +304,6 @@ h2.section-head {
 	flex-flow: wrap;
 	align-content: center;
 	justify-content: center;
-}
-
-@media all and (max-width: 900px) {
-	#about .skills > div.disp-flex {
-		padding: 0;
-		margin: 30px auto 0;
-		max-width: 500px;
-		flex-flow: wrap;
-		align-content: center;
-		justify-content: space-around;
-	}
-	.technologies .list,
-	.tools .list {
-		width: 230px;
-		flex-flow: wrap;
-		align-content: center;
-		justify-content: center;
-	}
 }
 
 .list .item {
@@ -534,12 +417,6 @@ h2.section-head {
 	visibility: visible;
 }
 
-@media all and (min-width: 1200px) {
-	#contact {
-		max-width: 700px;
-	}
-}
-
 /* ---------- FOOTER */
 
 #footer {
@@ -585,10 +462,4 @@ h2.section-head {
 	bottom: 50px;
 	left: 85%;
 	display: none;
-}
-
-@media all and (max-width: 500px) {
-	#back-to-top {
-		bottom: 10px;
-	}
 }
