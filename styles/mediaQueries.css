@@ -7,10 +7,7 @@
 	.section {
 		padding: 90px 0;
 	}
-	/* .disp-grid {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) !important;
-	}
-} */
+}
 
 @media all and (max-width: 900px) {
 	#about .skills > div.disp-flex {
