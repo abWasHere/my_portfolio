@@ -36,7 +36,7 @@ export const projectsList = [
 	},
 	{
 		id: 1,
-		name: "Survive The City",
+		name: "Survive",
 		description:
 			"Front-end game designed only with HTML, CSS and JS DOM manipulation.",
 		url: "https://abwashere.github.io/survive-the-city",
