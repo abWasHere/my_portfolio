@@ -1,10 +1,22 @@
 export const projectsList = [
 	{
+		id: 5,
+		name: "Pepperoni",
+		description:
+			"MERN stack web app for making reservations and some logistic management.",
+		tags: "#react #mongoDB #bootstrap #muicss #sass",
+		url: "https://pepperoni-restaurant.herokuapp.com",
+		source_code: "https://github.com/abWasHere/pepperoni-server",
+		img_url: "./images/pepperoni-capture.jpg",
+		release_date: "12/2020",
+		personal: true,
+	},
+	{
 		id: 4,
 		name: "NBA STATS",
 		description:
 			"Front-end app using a public API to fetch informations about NBA players and teams.",
-		tags: "#react #API #materialUI #bootstrap #chartJS #firebase",
+		tags: "#react #API #materialUI #bootstrap #chartJS",
 		url: "https://nba-stats-2020.web.app",
 		source_code: "https://github.com/abWasHere/nba-stats",
 		img_url: "./images/nba-stats-capture-2.jpg",
@@ -16,8 +28,7 @@ export const projectsList = [
 		name: "SPM",
 		description:
 			"MERN stack app designed to help sport clubs attract and recruit new female members.",
-		tags:
-			"#react #express #mongoDB #cloudinary #mapbox #turf #materialUI #bulma",
+		tags: "#react #mongoDB #cloudinary #mapbox #materialUI #bulma",
 		url: "https://sport-pour-meufs.herokuapp.com ",
 		source_code: "https://github.com/abWasHere/SPM-app-client",
 		img_url: "./images/spm-capture.jpg",
@@ -28,7 +39,7 @@ export const projectsList = [
 		name: "Sportrip",
 		description:
 			"App created to connect active people who want to organize sport themed trips.",
-		tags: "#handlebars #express #mongoDB #socket.io #cloudinary #bootstrap",
+		tags: "#handlebars #mongoDB #socket.io #cloudinary #bootstrap",
 		url: "https://sportrip.herokuapp.com",
 		source_code: "https://github.com/auderichon/sporttrip",
 		img_url: "./images/sportrip-capture-3.jpg",
