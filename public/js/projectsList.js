@@ -34,17 +34,17 @@ export const projectsList = [
 		img_url: "./images/spm-capture.jpg",
 		release_date: "08/2020",
 	},
-	{
-		id: 2,
-		name: "Sportrip",
-		description:
-			"App created to connect active people who want to organize sport themed trips.",
-		tags: "#handlebars #mongoDB #socket.io #cloudinary #bootstrap",
-		url: "https://sportrip.herokuapp.com",
-		source_code: "https://github.com/auderichon/sporttrip",
-		img_url: "./images/sportrip-capture-3.jpg",
-		release_date: "07/2020",
-	},
+	// {
+	// 	id: 2,
+	// 	name: "Sportrip",
+	// 	description:
+	// 		"App created to connect active people who want to organize sport themed trips.",
+	// 	tags: "#handlebars #mongoDB #socket.io #cloudinary #bootstrap",
+	// 	url: "https://sportrip.herokuapp.com",
+	// 	source_code: "https://github.com/auderichon/sporttrip",
+	// 	img_url: "./images/sportrip-capture-3.jpg",
+	// 	release_date: "07/2020",
+	// },
 	{
 		id: 1,
 		name: "Survive The City",
